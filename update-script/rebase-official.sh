@@ -29,6 +29,7 @@ done
 if [ -z "${username}" ];
 then
 	echo -e "${red}Missing username${reset}. ${green}Example: ./rebase-official.sh -u <username> -r <release>${reset}"
+	echo "Example: ./rebase-official.sh -u jhowell-burke -r 2018.03.0.20220609.0"
 	exit 1
 fi
 
@@ -36,6 +37,7 @@ fi
 if [ -z "${release}" ];
 then
 	echo -e "${red}Missing release version${reset}. ${green}Example: ./rebase-official.sh -u <username> -r <release>${reset}"
+	echo "Example: ./rebase-official.sh -u jhowell-burke -r 2018.03.0.20220609.0"
 	exit 1
 fi
 
